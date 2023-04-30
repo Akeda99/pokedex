@@ -1,0 +1,15 @@
+.barra-container {
+    background-color: #ddd;
+    height: 10px;
+    width: 300px;
+    border-radius: 1em;
+  }
+  
+  .barra {
+    background-color: #54AB74;
+    height: 10px;
+    transition: width 2s ease-in-out;
+    border-radius: 1em;
+
+  }
+  

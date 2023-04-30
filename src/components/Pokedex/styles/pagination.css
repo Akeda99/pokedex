@@ -1,0 +1,25 @@
+.pagination__list{
+    display: flex;
+    gap: 3.5rem;
+    
+}
+.pagination__item{
+font-size: 1.3rem;
+width: 40px;
+aspect-ratio: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0.5rem;
+cursor: pointer;
+}
+.page__active{
+    background-color: red;
+    color: white;
+    transition: background-color .5s color .5s;
+    cursor: pointer;
+}
+.page__active:hover{
+background-color: black;
+color:white;
+}

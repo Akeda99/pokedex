@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+.container_pokedex{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+ }
+ .selectors_div{
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+    
+ }
+ .selectors_div input{
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border: none;
+     height: 30px;
+     width: 300px;
+     border-radius: 2px;
+ }
+ .selectors_div button{
+     background-color: red;
+     color: white;
+     height: 30px;
+     width: 120px;
+     border-radius: 2px;
+ }
+ .selectors_div select{
+     width: 200px;
+     border: none;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 2px;
+ }
+ .container_pokedex h2{
+     font-size:medium;
+ }
+ .welcome_pokedex{
+     color: red;
+     
+ }
+
+
+ .container_header_pokedex{
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+     margin-top: 1rem;
+ }
+
+ .container_header_pokedex h2 {
+overflow: hidden; /* Para ocultar el texto completo */
+  border-right: .15em solid orange; /* Crear un cursor */
+  white-space: nowrap; /* Impedir que se produzca un salto de línea */
+  margin: 0 auto; /* Centrar el texto */
+  animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite; /* Definir la animación */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8em;
+}
+ @keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: red; }
+  }
+ .poke-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fill,20%);
+     justify-content: center;
+     gap: 5px;
+ 
+ }
+ .pagination_pokedex{
+     display: flex;
+     justify-content: center;
+     gap: 2rem;
+ 
+ }

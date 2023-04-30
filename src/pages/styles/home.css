@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header1 {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    position: relative;
+  }
+  .header__black1 {
+    width: 100%;
+    height: 35px;
+    background-color: #0C0C0C;
+    position: absolute;
+    bottom: 0;
+  }
+  .header__circle1 {
+    position: relative;
+    border: 10px solid #0C0C0C;
+    width: 70px;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50%;
+    left: 45%;
+    transform: translateY(-25%);
+  }
+  .header__circle1::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    aspect-ratio: 1;
+    background-color: #0C0C0C;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .section_home{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-right: 3.5em;
+    gap: 4em;
+  }
+.img_div, .text_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  .img_div img{
+    width: 400px;
+    margin-top: 4rem;
+
+  }
+  .form_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:  2em;
+  }
+  .form_div input{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid black;
+    border-radius: 1em;
+    height: 30px;
+  }
+  .form_div button{
+    background-color: red;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 1em;
+  }
+  .text_div h1{
+    font-size: 2rem;
+    color: red;
+    line-height: 50px;
+    font-family: 'Press Start 2P', cursive;
+  }
+  .text_div h2 {
+    margin-top: 1em;
+  }
+  .text_div p {
+  overflow: hidden; /* Para ocultar el texto completo */
+  border-right: .15em solid orange; /* Crear un cursor */
+  white-space: nowrap; /* Impedir que se produzca un salto de línea */
+  margin: 0 auto; /* Centrar el texto */
+  animation: typing1 2.5s steps(40, end), blink-caret .75s step-end infinite; /* Definir la animación */
+  }
+
+  /* Animación */
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 25% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: red; }
+}
+.text_div {
+  gap: 0.5em;
+}
